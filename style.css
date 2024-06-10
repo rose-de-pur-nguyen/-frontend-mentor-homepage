@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "Inter", Arial, sans-serif;
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    src: url('assets/fonts/static/Inter-Bold.ttf'); /* 700 */
+    src: url('assets/fonts/static/Inter-ExtraBold.ttf'); /* 800 */
+    src: url('assets/fonts/static/Inter-Regular.ttf'); /* 400 */
+}
+
+body {
+    position: relative;
+}
+
+.nav-item {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 18px;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar-nav .nav-link.active {
+    color: hsl(236, 13%, 42%) !important;
+}
+
+.navbar-nav .nav-link.active:hover {
+    color: hsl(5, 85%, 63%) !important; 
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.menu-toggler {
+    width: 30px;
+    height: 30px;
+    background-image: url('assets/images/icon-menu.svg');
+    background-size: cover;
+    right: 0;
+    display: none;
+    z-index: 9999;
+}
+
+
+
+.image-web3 {
+    background-size: cover;
+    max-width: 950px;
+    height: auto;
+}
+
+.info .title {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+    color:  hsl(240, 100%, 5%);
+}
+
+.info .description .text {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: hsl(236, 13%, 42%);
+}
+
+.description {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info .button-readMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 55px;
+    background-color: hsl(5, 85%, 63%);
+    color:  hsl(240, 100%, 5%);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.info .button-readMore:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.side-news {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.side-news header h1 {
+    font-weight: 700;
+    color: hsl(35, 77%, 62%);
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.sub-post {
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.sub-post:nth-child(3) {
+    border-bottom: none;
+}
+
+.sub-post .sub-post-description {
+    color: hsl(236, 13%, 42%);
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.sub-post .sub-post-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(36, 100%, 99%);
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.sub-post .sub-post-title:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.side-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-side img {
+    height: 160px;
+    max-width: fit-content;
+}
+
+.number {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Inter", Arial, sans-serif;
+    color: hsl(5, 85%, 63%);
+}
+
+.side-info .sub-post-title {
+    font-size: 20px;
+    font-family: "Inter", Arial, sans-serif;
+    color: hsl(240, 100%, 5%);
+    font-weight: 800;
+}
+
+.side-info .sub-post-title:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.side-info .sub-post-description {
+    color: hsl(236, 13%, 42%);
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
+/* MENU */
+.menu {
+    width: 60vw;
+    background: hsl(36, 100%, 99%);
+    position: fixed;
+    right: -60vw;
+    top: 0;
+    bottom: 0;
+    transition: 1.5s ease-in-out;
+    z-index: 999999;
+}
+
+.menu.active {
+    right: 0;
+}
+
+.menu .wrapper {
+    position: relative;
+}
+
+.closeBtn {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    right: 40px;
+}
+
+.menu-list {
+    position: absolute;
+    list-style-type: none;
+    top: 25vh;
+}
+
+.menu-list li {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+}
+
+.background-filter {
+    background-color: rgba(25, 31, 52, 0.5);
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.background-filter.active {
+    display: block;
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-toggler {
+        display: block;
+    }
+}
+
